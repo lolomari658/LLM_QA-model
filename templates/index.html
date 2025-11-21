@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Q&A Web GUI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Q&A Web GUI</h1>
+        <form method="POST">
+            <input type="text" name="question" placeholder="Enter your question" required>
+            <button type="submit">Ask</button>
+        </form>
+        {% if processed %}
+            <h3>Processed Question:</h3>
+            <p>{{ processed }}</p>
+            <h3>Answer:</h3>
+            <p>{{ answer }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

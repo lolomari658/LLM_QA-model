@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; background: #f0f2f5; }
+.container { width: 50%; margin: auto; padding: 20px; background: white; margin-top: 50px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+input[type="text"] { width: 80%; padding: 10px; margin-right: 10px; }
+button { padding: 10px 20px; }
